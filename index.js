@@ -1,0 +1,1 @@
+alert('2nd script is running now')

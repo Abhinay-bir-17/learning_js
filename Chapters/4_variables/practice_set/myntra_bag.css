@@ -1,0 +1,22 @@
+.bag{
+  padding: 5px 30px;
+  background-color: green;
+  border: none;
+  color: black;
+  border-radius: 20px;
+}
+.sale{
+  padding: 5px 30px;
+  background-color: grey;
+  border: 5px thin black;
+  color: black;
+  border-radius: 20px;
+}
+.wishlist{
+  padding: 5px 30px;
+  background-color: grey;
+  border: 5px thin black;
+  color: black;
+  border-radius: 20px;
+  text-transform: uppercase;
+}

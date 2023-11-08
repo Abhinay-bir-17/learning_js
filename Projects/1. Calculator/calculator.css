@@ -1,0 +1,26 @@
+#calc{
+  border:  1px solid white;
+  border-radius: 5px;
+  width: 500px;
+  margin: 50px  410px;
+
+}
+#display{
+  margin: 10px ;
+  width: 93%;
+  /* to change height see below */
+  font-size: 40px; 
+
+}
+
+.button{
+  width: 120px;
+  height: 60px;
+  margin: 5px ;
+}
+.button_container{
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  flex-wrap:  wrap;
+}
