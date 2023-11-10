@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stone Paper Scissor Game</title>
+  <link rel="stylesheet" href="spc.css">
+</head>
+<body>
+  <h1> Stone Paper Scissor Game!</h1>
+
+  <button onclick="
+    user = ' STONE';
+    alert(`so you have chosen ${user}`);
+    aux = 1;
+    while(aux){
+      
+      let x = Math.random() * 100;
+      x = x%3;
+      if(x==0)comp='STONE';
+      else if(x==1)comp = 'PAPER';
+      else comp = 'SCISSOR';
+      console.log(`so user has chose ${user} and computer has chose ${comp}`)
+      if(comp=='PAPER')comp_score+=1;
+      else if(comp==='SCISSOR')user_score+=1;
+      
+      alert(`score now is user score ${user_score} :: ${comp_score} comp score`);
+
+      if(comp_score == 3 && user_score<3){
+        alert('user has won the match');
+        comp_score=0; user_score=0;
+      }
+      if(user_score==3 && comp_score<3){
+        alert('  computer has won the match ');
+      }
+      start = prompt(`do u wanna play game? enter y if so!`);
+      if(start!='y')aux = 0;
+      else break;   
+    }
+  ">STONE</button>
+  
+  <button onclick="
+    user = 'PAPER';
+    alert(`so u have chose${user}`);
+    aux = 1;
+    while(aux){
+      
+      let x = Math.floor(Math.random() * 100);
+      x = x%3;
+      if(x==0)comp='STONE';
+      else if(x==1)comp = 'PAPER';
+      else comp = 'SCISSOR';
+      console.log(`so user has chose ${user} and computer has chose ${comp}`)
+      if(comp=='STONE')user_score+=1;
+      else if(comp==='SCISSOR')comp_score+=1;
+      alert(`score now is user score ${user_score} :: ${comp_score} comp score`);
+      
+      if(comp_score == 3 && user_score<3){
+        alert('user has won the match');
+              comp_score=0; user_score=0;
+            }
+            if(user_score==3 && comp_score<3){
+              alert('  computer has won the match ');
+            }
+            start = prompt(`do u wanna play game? enter y if so!`);
+      if(start!='y')aux = 0; else break;
+    }
+    ">PAPER
+  </button>
+  
+  <button onclick="
+    user = ' SCISSOR';
+    alert(`so u have chose${user}`);
+    aux = 1;
+    while(aux){
+      
+      let x = Math.random() * 100;
+      x = x%3;
+      if(x==0)comp='STONE';
+      else if(x==1)comp = 'PAPER';
+      else comp = 'SCISSOR';
+      console.log(`so user has chose ${user} and computer has chose ${comp}`)
+      if(user=='PAPER')user_score+=1;
+      else if(user==='STONE')comp_score+=1;
+      alert(`score now is user score ${user_score} :: ${comp_score} comp score`);
+      if(comp_score == 3 && user_score<3){
+        alert('user has won the match');
+        comp_score=0; user_score=0;
+      }
+      if(user_score==3 && comp_score<3){
+        alert('  computer has won the match ');
+      }
+      start = prompt(`do u wanna play game? enter y if so!`);
+      if(start!='y')aux = 0;
+      else break;
+    }
+  ">SCISSOR
+  </button>
+  
+  <script>
+    alert('game is abt to start. get set gooooo!!! whoever gets 1st 3 points wins the MATCHHH')
+    let start = prompt(`inside script! --> do u wanna play game? enter y if so!`);
+    let user;
+    let comp; let aux = 1;
+    let user_score = 0, comp_score=0;
+  </script>
+</body>
+</html>
